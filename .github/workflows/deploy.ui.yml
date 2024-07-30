@@ -32,6 +32,8 @@ jobs:
         run: pnpm install
 
       - name: Build project
+        env:
+          VITE_API_LOCAL: ${{ vars.VITE_API_LOCAL }}
         run: pnpm run build --filter=media-monitor-ui
 
       - name: Setup Pages
