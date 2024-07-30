@@ -4,10 +4,12 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "deploy": "gh-pages -d ./apps/media-monitor-ui/dist"
   },
   "devDependencies": {
     "eslint": "^8.57.0",
+    "gh-pages": "^6.1.1",
     "prettier": "^3.2.5",
     "turbo": "^2.0.9"
   },
